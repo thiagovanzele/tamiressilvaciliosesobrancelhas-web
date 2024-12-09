@@ -1,0 +1,24 @@
+.header {
+    background: var(--gray-800);
+    color: var(--pink-100);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 10rem;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.usuario {
+    border: 1px solid var(--gray-400);
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.usuario:hover {
+    color: var(--pink-900);
+    border: 1px solid var(--gray-100);
+}

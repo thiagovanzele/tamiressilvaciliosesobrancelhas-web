@@ -1,0 +1,59 @@
+.button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button--default {
+    background-color: var(--white);
+    color: var(--pink-300);
+}
+
+.button--default:hover {
+    color: var(--white);
+    background-color: var(--pink-100);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button--default:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--pink-500);
+}
+
+.button--reset {
+    background-color: var(--gray-300);
+    color: var(--black);
+}
+
+.button--reset:hover {
+    background-color: var(--gray-400);
+    color: var(--white);
+}
+
+.button--reset:focus {
+    outline: 1px solid var(--gray-500);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(169, 169, 169, 0.5);
+}
+
+.button--reset:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:disabled {
+    background-color: var(--gray-700);
+    color: var(--gray-400);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
